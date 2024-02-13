@@ -1,0 +1,185 @@
+/* Base styles for the app */
+.app {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(130deg, #957DAD, #D291BC);
+  padding: 20px;
+  padding-top: 200px; 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.selection {
+   
+  top: 200px;
+  left: 400px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #f06e6e;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: #000;
+  
+}
+
+
+/* Heading */
+h2 {
+  color: #83e7d8;
+}
+
+/* Question section centered with flex properties */
+.question-section {
+  background-color: #e0a0ee;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 20px 0; /* Adjusted margin for spacing */
+  width: 80%;
+  max-width: 600px;
+  align-self: center; /* Center align self */
+}
+
+/* Question count */
+.question-count {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Question text */
+.question-text {
+  font-size: 20px;
+  color: #222;
+}
+
+/* Answer section with flex direction row to position buttons side by side */
+.answer-section {
+  display: flex;
+  flex-direction: row; /* Changed to row */
+  justify-content: center; /* Center buttons horizontally */
+  flex-wrap: wrap; /* Wrap buttons to next line if space is insufficient */
+}
+
+/* Answer button */
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #8cc1fa;
+  color: white;
+  border-radius: 5px;
+  margin: 5px; /* Adjusted margin for spacing around buttons */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect on answer button */
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Score section */
+.score-section {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 600px;
+  align-self: center; /* Center align self */
+  text-align: center;
+}
+
+
+/* Form container styles */
+.form-container {
+  background: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  text-align: center;
+}
+
+/* Style the form header */
+.form-container h2 {
+  font-size: 24px;
+  color: #4A4A4A;
+  margin-bottom: 30px;
+}
+
+/* Style the form labels and inputs */
+.form-container label {
+  display: block;
+  text-align: left;
+  font-size: 16px;
+  color: #4A4A4A;
+  margin-bottom: 5px;
+}
+
+.form-container input[type='text'],
+.form-container input[type='email'],
+.form-container input[type='number'] {
+  width: calc(100% - 20px);
+  margin-bottom: 20px;
+  padding: 15px 10px;
+  border: 1px solid #CFCFCF;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #4A4A4A;
+}
+
+/* Remove the default browser focus styles */
+.form-container input[type='text']:focus,
+.form-container input[type='email']:focus,
+.form-container input[type='number']:focus {
+  outline: none;
+  border-color: #8D8D8D;
+}
+
+/* Style the submit button */
+.form-container button[type='submit'] {
+  width: calc(100% - 20px);
+  margin-top: 20px;
+  padding: 15px 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #7A7A7A;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.form-container {
+  background: linear-gradient(130deg, #957DAD, #D291BC); 
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+  color: #6866e3;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+
+.form-footer {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #4A4A4A;
+}
+
+.form-footer a {
+  color: #7A7A7A;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.form-footer a:hover {
+  text-decoration: underline;
+}
